@@ -7,33 +7,53 @@
   <title>Manish Builds</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary: #4f46e5;
+      --secondary: #9333ea;
+      --accent: #f59e0b;
+      --bg: #f9fafb;
+      --text: #1f2937;
+    }
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f0f2f5;
-      color: #333;
+      background: var(--bg);
+      color: var(--text);
     }
     header {
-      background-color: #282c34;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
       color: white;
-      padding: 2rem;
+      padding: 3rem 1rem;
       text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
     main {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       padding: 2rem;
     }
-    h1 {
-      margin: 0;
+    h1, h2 {
+      margin: 0 0 1rem;
     }
     .section {
+      background: white;
+      border-left: 5px solid var(--accent);
+      padding: 1.5rem;
       margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      border-radius: 6px;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
     }
     a {
-      color: #007acc;
+      color: var(--primary);
       text-decoration: none;
+      font-weight: 500;
     }
     a:hover {
       text-decoration: underline;
@@ -41,7 +61,8 @@
     footer {
       text-align: center;
       padding: 1rem;
-      background: #ddd;
+      background: var(--primary);
+      color: white;
       margin-top: 2rem;
     }
   </style>
